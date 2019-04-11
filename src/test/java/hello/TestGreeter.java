@@ -46,7 +46,18 @@ public class TestGreeter {
 
    }
 
-	
+	@test 
+
+   public void newtestrmmGreeterPass()
+
+   {
+      g.setName("you");
+
+      assertEquals(g.getName(),"you");
+
+      assertEquals(g.sayHello(),"Hey you!");
+
+   }
 
    @Test
 

@@ -9,5 +9,11 @@ public class HelloWorld {
     
     Greeter greeter = new Greeter();
     System.out.println(greeter.sayHello());
+
+    Greeter greeter2 = new Greeter();
+    System.out.println(greeter.sayHello());
+
+    Greeter greeter3 = new Greeter();
+    System.out.println(greeter.sayHello());
   }
 }
