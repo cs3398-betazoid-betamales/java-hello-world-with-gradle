@@ -62,4 +62,9 @@ public class TestGreeter {
 
    }
 
+   @Test
+   public void newtestCWGreeterPass() {
+      assertNotEquals("Hello Cameron", g.sayHello());
+   }
+
 }
