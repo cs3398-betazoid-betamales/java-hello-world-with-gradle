@@ -64,7 +64,7 @@ public class TestGreeter {
 
    @Test
 
-   public void testAnotherGreeter()
+   public void newtestndw30GreeterPass()
 
    {
 
@@ -78,7 +78,7 @@ public class TestGreeter {
 
    @Test
 
-   public void testFailGreeter()
+   public void newestndw30GreeterFail()
 
    {
 
