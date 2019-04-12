@@ -63,7 +63,7 @@ public class TestGreeter {
    }
 
    @Test
-   
+
    public void testAnotherGreeter()
 
    {
@@ -75,4 +75,19 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello Grader!");
 
    }
+
+   @Test
+
+   public void testFailGreeter()
+
+   {
+
+      g.setName("Darkness");
+
+      assertEquals(g.getName(),"My Old Friend");
+
+      assertEquals(g.sayHello(),"Hello I've come to talk with you again!");
+
+   }
+
 }
