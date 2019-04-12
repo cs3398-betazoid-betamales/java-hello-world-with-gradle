@@ -76,18 +76,5 @@ public class TestGreeter {
 
    }
 
-   @Test
-
-   public void newestndw30GreeterFail()
-
-   {
-
-      g.setName("Darkness");
-
-      assertEquals(g.getName(),"My Old Friend");
-
-      assertEquals(g.sayHello(),"Hello I've come to talk with you again!");
-
-   }
 
 }
