@@ -67,4 +67,9 @@ public class TestGreeter {
       assertNotEquals("Hello Cameron", g.sayHello());
    }
 
+   @Test
+   public void newtestCWGreeterFail() {
+      assertEquals("Hello Wonderful World", g.sayHello());
+   }
+
 }
