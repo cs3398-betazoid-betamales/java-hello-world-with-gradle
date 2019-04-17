@@ -62,4 +62,11 @@ public class TestGreeter {
 
    }
 
+   @Test
+   public void newtestRMGreeterPass()
+   {
+      g.setName("Dio Brando");
+      assertEquals(g.sayHello(), "Hello Dio Brando!");
+   }
+
 }
