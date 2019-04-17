@@ -45,8 +45,8 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello!");
 
    }
- /*
-	@test 
+ 
+	@Test 
 
   public void newtestrmmGreeterPass()
 
@@ -57,7 +57,7 @@ public class TestGreeter {
 
       assertEquals(g.sayHello(),"Hey you!");
 
-   }*/
+   }
 
    @Test
 
