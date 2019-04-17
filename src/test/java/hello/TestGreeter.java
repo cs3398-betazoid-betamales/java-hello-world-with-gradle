@@ -62,7 +62,7 @@ public class TestGreeter {
 
    @Test
 
-   public void testGreeter() 
+   public void testGreeter2() 
 
    {
 
