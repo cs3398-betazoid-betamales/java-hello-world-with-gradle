@@ -45,10 +45,10 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello!");
 
    }
-
+ /*
 	@test 
 
-   public void newtestrmmGreeterPass()
+  public void newtestrmmGreeterPass()
 
    {
       g.setName("you");
@@ -57,7 +57,7 @@ public class TestGreeter {
 
       assertEquals(g.sayHello(),"Hey you!");
 
-   }
+   }*/
 
    @Test
 
