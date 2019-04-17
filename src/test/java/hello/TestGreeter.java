@@ -74,4 +74,18 @@ public class TestGreeter {
 
    }
 
+   @Test
+
+   public void newtestrmmGreeterFail() 
+
+   {
+
+      g.setName("Martin");
+
+      assertEquals(g.getName(),"Martin");
+
+      assertEquals(g.sayHello(),"Goodbye Martin!");
+
+   }
+
 }
