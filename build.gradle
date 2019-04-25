@@ -24,6 +24,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile "joda-time:joda-time:2.2"
+<<<<<<< HEAD
     testCompile('org.junit.jupiter:junit-jupiter-api:5.3.1')
     testCompile('org.junit.jupiter:junit-jupiter-params:5.3.1')
     testRuntime('org.junit.jupiter:junit-jupiter-engine:5.3.1')   
@@ -56,6 +57,9 @@ task distSetup {
         from "${projectDir}/build/reports"
         into "${projectDir}/dist/test_reports"
     }
+=======
+    testCompile "junit:junit:5.0"
+>>>>>>> master
 }
 
 task zipDist(type: Zip, dependsOn: distSetup) {
