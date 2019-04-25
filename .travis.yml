@@ -1,3 +1,4 @@
+dist: xenial
 language: java
 # the following will skip the installation of dependencies.
 install: true
