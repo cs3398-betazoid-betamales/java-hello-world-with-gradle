@@ -1,91 +1,105 @@
-/*package hello;
-
-
+package hello;
 
 import static org.junit.Assert.*;
-
-
 
 import org.junit.Before;
 
 import org.junit.Test;
 
-
-
-
-
 public class TestGreeter {
 
+	private Greeter g;
 
+	@Before
 
-   private Greeter g;
+	public void setUp() throws Exception
 
+	{
+
+		g = new Greeter();
+
+	}
 	
+	@Test
+	
+	public void newtestTCGreeterPass(){
+		String name = "Clarice";
+		String there = "there";
+		String nada = null;
+		
+		g.setName(name);
+		
+		assertEquals(g.getName(), name);
+		
+		assertEquals(g.sayHello(), "Hello Clarice!");
+		
+		g.setName(there);
+		
+		assertNotSame(g.getName(), name);
+		
+		assertSame(g.getName(), there);
+		
+		g.setName(nada);		
+		
+		assertNull(g.getName());
+		
+		assertTrue(g.getName() == null);
+		
+		assertFalse(g.getName() instanceof String);
+		
+	}
+	/*
+	@Test
+	
+	public void newtestTCGreeterFail() {
+		String name = "Clarice";
+		String there = "there";
+		String nada = null;
+		assertEquals(g.getName(), name);
+		
+		assertEquals(g.sayHello(), "Hello!");
+		
+		g.setName(name);
+		
+		assertNotSame(g.getName(), name);
+		
+		assertSame(g.getName(), there);
+		
+		g.setName(nada);		
+		
+		assertNotNull(g.getName());
+		
+		assertTrue(g.getName() == "null");
+		
+		assertTrue(g.getName() instanceof String);
+	}
+	*/
+	@Test
 
-   @Before
+	public void testGreeterEmpty()
 
-   public void setUp() throws Exception 
+	{
 
-   {
+		assertEquals(g.getName(), "");
 
-      g = new Greeter();
+		assertEquals(g.sayHello(), "Hello!");
 
-   }
+	}
 
+	@Test
 
+	public void testGreeter()
 
-   @Test
+	{
 
-   public void testGreeterEmpty() 
+		g.setName("World");
 
-   {
+		assertEquals(g.getName(), "World");
 
-      assertEquals(g.getName(),"");
+		assertEquals(g.sayHello(), "Hello World!");
 
-      assertEquals(g.sayHello(),"Hello!");
+	}
 
-   }
- 
-   @Test
+}
 
-   public void testGreeter() 
-
-   {
-
-      g.setName("World");
-
-      assertEquals(g.getName(),"World");
-
-      assertEquals(g.sayHello(),"Hello World!");
-
-   }
-
-   @Test
-
-   public void newtestrmmGreeterPass() 
-
-   {
-
-      g.setName("Rhett");
-
-      assertEquals(g.getName(),"Rhett");
-
-      assertEquals(g.sayHello(),"Hello Rhett!");
-
-   }
-
-   @Test
-
-   public void newtestrmmGreeterFail() 
-
-   {
-
-      g.setName("Martin");
-
-      assertEquals(g.getName(),"Martin");
-
-      assertEquals(g.sayHello(),"Goodbye Martin!");
-
-   }
-
-}*/
+//testing
