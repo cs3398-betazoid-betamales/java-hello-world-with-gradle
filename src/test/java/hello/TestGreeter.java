@@ -1,3 +1,4 @@
+/*
 package hello;
 
 import static org.junit.Assert.*;
@@ -74,6 +75,7 @@ public class TestGreeter {
 		assertTrue(g.getName() instanceof String);
 	}
 	*/
+/*
 	@Test
 
 	public void testGreeterEmpty()
