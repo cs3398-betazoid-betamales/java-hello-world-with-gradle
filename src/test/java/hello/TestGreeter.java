@@ -49,7 +49,7 @@ public class TestGreeter {
 		assertFalse(g.getName() instanceof String);
 		
 	}
-	/*
+	
 	@Test
 	
 	public void newtestTCGreeterFail() {
@@ -74,8 +74,7 @@ public class TestGreeter {
 		
 		assertTrue(g.getName() instanceof String);
 	}
-	*/
-/*
+
 	@Test
 
 	public void testGreeterEmpty()
@@ -97,6 +96,8 @@ public class TestGreeter {
 		g.setName("World");
 
 		assertEquals(g.getName(), "World");
+		
+
 
 		assertEquals(g.sayHello(), "Hello World!");
 
@@ -105,3 +106,4 @@ public class TestGreeter {
 }
 
 //testing
+*/
