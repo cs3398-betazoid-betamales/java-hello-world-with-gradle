@@ -14,7 +14,7 @@ before_deploy:
   - echo "Just generated GIT_TAG"
   - echo $GIT_TAG
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$GITPERM@github.com/cs3398-betazoid-betamales/java-hello-world-with-gradle/tree/Nicholas  --tags
+  - git push -q https://$GITPERM@github.com/cs3398-betazoid-betamales/java-hello-world-with-gradle  --tags
   - ls -R
 
 deploy:
@@ -27,4 +27,4 @@ deploy:
     - hello_world_executable_distributions.tar.gz
   skip_cleanup: true
   on:
-    branches: Nicholas
+    all_branches: true
