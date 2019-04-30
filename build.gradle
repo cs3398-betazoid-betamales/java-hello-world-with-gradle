@@ -22,6 +22,7 @@ jar {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+
 dependencies {
     compile "joda-time:joda-time:2.2"
     testCompile('org.junit.jupiter:junit-jupiter-api:5.3.1')
@@ -33,12 +34,14 @@ dependencies {
 }
 // ****** Comment this out on the remote repository so that Travis CI will build ******
 
+/*
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
     }
 }
+*/
 
 task dist {
     description "Generate the dist(s) into the dist folder need to fix this."
