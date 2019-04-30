@@ -27,5 +27,4 @@ deploy:
     - hello_world_executable_distributions.tar.gz
   skip_cleanup: true
   on:
-    tags: false
     all_branches: true
