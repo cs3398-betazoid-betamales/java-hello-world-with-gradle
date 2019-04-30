@@ -2,13 +2,13 @@ package hello;
 
 
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeAll;
 
+import org.junit.jupiter.api.DisplayName;
 
-import org.junit.Before;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 
@@ -18,25 +18,17 @@ public class TestGreeter {
 
 
 
-   private Greeter g;
-
-
-
-   @Before
-
-   public void setUp() throws Exception
-
-   {
-
-      g = new Greeter();
-
-   }
+   private Greeter g = new Greeter();
 
 
 
    @Test
 
+   @DisplayName("Test for Empty Name")
+
    public void testGreeterEmpty()
+
+
 
    {
 
@@ -48,11 +40,19 @@ public class TestGreeter {
 
 
 
+
+
+
+
    @Test
+
+   @DisplayName("Test for Name='World'")
 
    public void testGreeter()
 
    {
+
+
 
       g.setName("World");
 
@@ -62,19 +62,6 @@ public class TestGreeter {
 
    }
 
-   @Test
-
-   public void newtestndw30GreeterPass()
-
-   {
-
-      g.setName("Grader");
-
-      assertEquals(g.getName(),"Grader");
-
-      assertEquals(g.sayHello(),"Hello Grader!");
-
-   }
 
 
 }
