@@ -1,7 +1,7 @@
 dist: xenial
 
 language: java
-script:
+script: 
   - gradle clean build
   - tar -zcf hello_world_build.tar.gz build/reports
   - tar -zcf hello_world_executable_distributions.tar.gz build/distributions
@@ -14,17 +14,18 @@ before_deploy:
   - echo "Just generated GIT_TAG"
   - echo $GIT_TAG
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://$GITPERM@github.com/cs3398-betazoid-betamales/java-hello-world-with-gradle  --tags
+  - git push -q https://$GITPERM@github.com/drlehr/Java_Gradle_Hello_World  --tags
   - ls -R
-
+  
 deploy:
   provider: releases
   api_key:
     secure: $GITPERM
-  file:
+  file: 
     - "README.md"
-    - hello_world_build.tar.gz
+    - hello_world_build.tar.gz 
     - hello_world_executable_distributions.tar.gz
   skip_cleanup: true
   on:
-    all_branches: true
+    tags: false
+  

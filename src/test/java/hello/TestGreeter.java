@@ -19,22 +19,20 @@ public class TestGreeter {
 
 
    private Greeter g = new Greeter();
-
+   private Greeter nullGreeter = null;
 
 
    @Test
 
-   @DisplayName("Test for Empty Name")
+   @DisplayName("Test for Null")
 
-   public void testGreeterEmpty()
+   public void newest_ndw_WorkerPass()
 
 
 
    {
 
-      assertEquals(g.getName(),"");
-
-      assertEquals(g.sayHello(),"Hello!");
+      assertNull(nullGreeter);
 
    }
 
@@ -46,19 +44,18 @@ public class TestGreeter {
 
    @Test
 
-   @DisplayName("Test for Name='World'")
+   @DisplayName("Test Sameness'")
 
-   public void testGreeter()
+   public void newest_ndw_WorkerFail()
 
    {
 
+     g.setName("Something Something");
+     String something = g.getName();
+     String another_something = "Another Something";
+     assertTrue(something == another_something);
 
 
-      g.setName("World");
-
-      assertEquals(g.getName(),"World");
-
-      assertEquals(g.sayHello(),"Hello World!");
 
    }
 
