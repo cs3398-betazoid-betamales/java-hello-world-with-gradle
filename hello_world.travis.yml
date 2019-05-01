@@ -27,6 +27,4 @@ deploy:
     - hello_world_executable_distributions.tar.gz
   skip_cleanup: true
   on:
-    branches:
-      only:
-        - Nicholas
+    all_branches: true
